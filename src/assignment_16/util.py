@@ -8,5 +8,8 @@ def word(n):
         else:
             word_count[word]=1
             appear.append(word)
-    print(len(appear))
-    print(" ".join(str(word_count[word])for word in appear))
+    output = ""
+    output += str(len(appear)) + "\n"
+    output += " ".join(str(word_count[word]) for word in appear)
+
+    return output
